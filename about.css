@@ -1,0 +1,196 @@
+/* IMAGE GALLERY CSS */
+
+/* *{
+    border:dashed; 
+} */
+
+.project1 {
+    height: 100%;
+    display: grid;
+    margin: 0 auto;
+    align-content: center;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    padding-top: 75px;
+    grid-template-areas:
+    ". a p ."
+    ". . p ."
+    ;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-transform: initial;
+    letter-spacing: 3px;
+}
+
+.description {
+    grid-area: p;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: initial;
+    padding-right: 200px;
+    padding-top: 50px;
+}
+
+.paragraph-name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-top: 15px;
+  }
+  
+  span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
+.box-styling {
+    height: 350px;
+    /* background-color: rgb(110, 110, 110); */
+    /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+  }
+
+.box-wrapper{
+  height:350px;
+  border-radius: 1%;
+}
+.img {
+    grid-area: a;
+    padding-left: 195px;
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+
+}
+
+.bigText {
+    font-size: 2em;
+    padding-right: .5ch;
+}
+
+.socials {
+  display: grid;
+  display: grid;
+  margin: 0 auto;
+  align-content: center;
+  grid-template-rows: auto;
+  width: 75%;
+  align-content: center;
+  grid-template-areas:
+  "i li"
+  ;
+}
+
+.instagram {
+grid-area: i;
+width: 14%;
+margin-top: 100px;
+margin-bottom: 50px;
+/* margin-left: 30px; */
+}
+
+.linkedin {
+grid-area: li;
+width: 17%;
+margin-top: 100px;
+margin-bottom: 50px;
+margin-left: 175px;
+}
+
+/* img:hover {
+    opacity: 75%;
+} */
+
+@media (max-width:735px){
+
+  .project1 {
+    display: grid;
+    margin: 0 auto;
+    align-content: center;
+    grid-template-rows: auto;
+    width: 100%;
+    grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+    /* grid-gap: 150px; */
+    grid-template-areas:
+    "a"
+    "p"
+    ;
+  } 
+
+    .img {
+      grid-area: a;
+      align-content: center;
+      /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+    }
+
+    .description {
+      grid-area: p;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: initial;
+      margin-left: 195px;
+    }
+  
+    .paragraph-name {
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding-top: 15px;
+      }
+
+      span {
+        font-family: 'Raleway', sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 900;
+        text-decoration: underline;
+        }
+
+      a {
+          padding-right: 100px;
+      }
+  
+      .socials {
+        display: grid;
+        align-content: center;
+        grid-template-rows: auto;
+        width: 75%;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        /* grid-gap: 150px; */
+        grid-template-areas:
+          "i li"
+        ;
+      }
+
+        .instagram {
+          grid-area: i;
+          width: 18%;
+          margin-top: 100px;
+          margin-bottom: 50px;
+          margin-left: -55px;
+        }
+
+        .linkedin {
+          grid-area: li;
+          width: 25%;
+          margin-top: 100px;
+          margin-bottom: 50px;
+          margin-left: -150px;
+        }
+
+
+}

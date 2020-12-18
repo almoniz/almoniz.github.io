@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+  /* border:dashed; */
+  /* box-sizing: border-box; */
+  }
+
+.container {
+    background-color: #ffffff;
+    margin: 0 auto;
+    height: 100%;
+    width: 75%;
+    display: grid;
+    align-content: center;
+    grid-template-areas: 
+      "l l l"
+      "h h h"
+      "n n n"
+}
+
+.logo {
+  align-items: center;
+  width: 15%;
+  grid-area: l;
+  margin-left: 488px;
+  margin-right: 488px;
+}
+
+header {
+  grid-area: h;
+}
+
+  .name {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 5px;
+  }
+
+nav {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  grid-area: n;
+  margin-top: 75px;
+  font-size: 20px;
+}
+
+a{ 
+  grid-area: a;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 150px;
+  margin-right: 125px;
+}
+
+a:hover {
+  font-weight: 1000;
+}
+
+.socials {
+  padding-top: 50px;
+    margin: 0 auto;
+    height: 100%;
+    width: 75%;
+    display: grid;
+    align-content: center;
+    grid-template-areas: 
+      "i . li";
+}
+
+.instagram {
+  grid-area: i;
+  width: 15%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.linkedin {
+  grid-area: li;
+  width: 27%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: -15px;
+}
+
+
+/* MEDIA QUERY FOR MOBILE */
+@media (max-width:735px){
+
+ .container {
+     grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+     width: 75%;
+     display: grid;
+     grid-template-areas:
+     ".l."
+     ".h."
+     ".n."
+     ;
+ }
+
+ .logo {
+    align-items: center;
+    width: 15%;
+    grid-area: l;
+    margin-left: 488px;
+    margin-right: 488px;
+  }
+
+  header {
+    grid-area: h;
+  }
+
+    .name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      text-align: center;
+      letter-spacing: 3px;
+      padding-top: 5px;
+    }
+
+  nav {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    grid-area: n;
+    margin-top: 75px;
+    font-size: 20px;
+  }
+
+  a{ 
+    grid-area: a;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    margin-right: 125px;
+  }
+
+  a:hover {
+    font-weight: 1000;
+  }
+ 
+}

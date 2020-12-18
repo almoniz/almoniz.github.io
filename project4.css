@@ -1,0 +1,119 @@
+/* IMAGE GALLERY CSS */
+
+/* *{
+    border:dashed; 
+} */
+
+.project1 {
+    height: 100%;
+    display: grid;
+    margin: 0 auto;
+    align-content: center;
+    grid-template-columns: 1fr minmax(500px, 1fr)  minmax(500px, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 50px;
+    padding-top: 75px;
+    grid-template-areas:
+    ". a a ."
+    ". n p ."
+    ". b c ."
+    ". d e ."
+    ". f g ."
+    ". h . ."
+    ". i l ."
+    ;
+}
+
+.project-name {
+    grid-area: n;
+    padding-top: 450px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    text-align: left;
+    text-transform: initial;
+    letter-spacing: 3px;
+}
+
+.description {
+    padding-top: 450px;
+    grid-area: p;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    text-transform: initial;
+    letter-spacing: 1px;
+}
+
+.box-styling {
+    height: 350px;
+    /* background-color: rgb(110, 110, 110); */
+    /* clip-path: polygon(5% 5%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%); */
+  }
+
+.box-wrapper{
+  height:350px;
+  border-radius: 1%;
+}
+.box1 {
+    grid-area: a;
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+.box4 {
+    grid-area: d;
+}
+
+.box5 {
+    grid-area: e;
+}
+
+.box6 {
+    grid-area: f;
+}
+
+.box7 {
+    grid-area: g;
+}
+
+.box8 {
+    grid-area: h;
+}
+
+.bigText {
+    font-size: 2em;
+    padding-right: .5ch;
+}
+
+.instagram {
+    grid-area: i;
+    width: 9%;
+    margin-top: 100px;
+}
+
+.linkedin {
+    grid-area: l;
+    width: 16%;
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+/* img:hover {
+    opacity: 75%;
+} */

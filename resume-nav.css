@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border:dashed; */
+    /* box-sizing: border-box; */
+    }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: inline-grid;
+    align-content: center;
+    column-gap: 50px;
+    grid-template-areas: 
+        ". l ."
+        "m m m"
+        "n n n";
+}
+
+a{ 
+    text-decoration: none;
+    color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+a:hover {
+    font-weight: 1000;
+}
+
+.main-header {
+    grid-area: m;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  grid-area: n;
+  margin-top: 100px;
+  font-size: 20px;
+}
+
+.logo {
+    align-items: center;
+    width: 100%;
+    grid-area: l;
+    /* margin-left: 488px;
+    margin-right: 488px; */
+  }
+
+
+
+@media screen and (max-width: 800px) {
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        display: inline-grid;
+        align-content: center;
+        column-gap: 50px;
+        grid-template-areas:  
+            "l"
+            "m"
+            "n";
+    }
+
+    a{ 
+        text-decoration: none;
+        color: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    a:hover {
+        font-weight: 1000;
+    }
+    
+    .main-header {
+        grid-area: m;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    
+    nav {
+      font-family: 'Raleway', sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      grid-area: n;
+      margin-top: 100px;
+      font-size: 20px;
+    }
+    
+    .logo {
+        align-items: center;
+        width: 35%;
+        grid-area: l;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        /* margin-left: 488px;
+        margin-right: 488px; */
+      }
+}
